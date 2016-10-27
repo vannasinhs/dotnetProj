@@ -11,7 +11,18 @@ namespace assignment1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                List<MenuItem> lmi = menus.getMenu();
 
+
+
+                foreach (MenuItem mi in lmi)
+                {
+                    mnuMain.Items.Add(mi);
+
+                }
+            }
         }
 
    

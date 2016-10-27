@@ -20,17 +20,6 @@ namespace assignment1
             items.Add(new MenuItem("item6", "", "", "~/home"));
             items.Add(new MenuItem("item7", "", "", "~/home"));
 
-            foreach (MenuItem mi in items)
-            {
-                mnuMain.Items.Add(mi);
-
-            }
-
-
-
-
-
-
 
             return items;
         }
