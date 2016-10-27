@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="assignment1.admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2"></div>
+
+                <%--NAVIGATION--%>
+
+                <div class="col-md-8">
+                    <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                                <a class="navbar-brand" href="#">Vonns Resteraunt</a>
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="../home">Home<span class="sr-only">(current)</span></a></li>
+                                    <li><a href="../lunch-menu">Lunch Menu</a></li>
+                                    <li><a href="../dinner-menu">Dinner Menu</a></li>
+                                    <li><a href="../Reservations">Reservations</a></li>
+                                    <li><a href="../about">About Us</a></li>
+                                    <li><a href="../contact">Contact</a></li>
+                                    <li><a href="../sign-in">Log In</a></li>
+                                    <li><a href="../directions">Directions</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="navbar-form navbar-left" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search" />
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
